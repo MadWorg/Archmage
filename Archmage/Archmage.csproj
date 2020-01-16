@@ -68,6 +68,8 @@
     <Compile Include="Engine\Interface\navButton.cs" />
     <Compile Include="Engine\Interface\rclButton.cs" />
     <Compile Include="Engine\Interface\TP.cs" />
+    <Compile Include="Engine\Particles\Particle.cs" />
+    <Compile Include="Engine\Particles\ParticleEngine.cs" />
     <Compile Include="Engine\Screens\ColorPick.cs" />
     <Compile Include="Engine\Screens\GameOver.cs" />
     <Compile Include="Engine\Screens\GameScreen.cs" />
@@ -117,6 +119,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\Drawable\archmage_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\particle\testParticle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
