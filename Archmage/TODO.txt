@@ -1,0 +1,20 @@
+Finish the UI Builder Class - on hold
+
+Add lists for buttons - fixed
+Add list for player UI
+
+fix the LevelScreen Input management for button - fixed
+
+Make all buttons have a rectangle for pos - fixed
+Make colorPicker work - working
+
+Fix button sound effect issues - fixed
+Make file storage work - done
+
+make a level/enemy generator
+
+make spells work
+
+make items work
+
+!!!clean up some code/add more comments
