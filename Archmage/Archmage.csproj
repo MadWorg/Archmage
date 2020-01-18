@@ -78,6 +78,7 @@
     <Compile Include="Engine\Screens\ScreenManager.cs" />
     <Compile Include="Engine\Screens\TitleScreen.cs" />
     <Compile Include="Entity\Enemy.cs" />
+    <Compile Include="Entity\Level.cs" />
     <Compile Include="Entity\Player.cs" />
     <Compile Include="Entity\StatusEffect.cs" />
     <Compile Include="Game1.cs" />

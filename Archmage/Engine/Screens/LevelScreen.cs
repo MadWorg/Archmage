@@ -20,10 +20,14 @@ namespace Archmage.Engine.Screens
     class LevelScreen : GameScreen 
     {
 
-        Texture2D hp, left, right, back;
-        BButton exit;
-        SpriteFont f;
+        private Texture2D hp, left, right, back;
+        private BButton exit;
+        private SpriteFont f;
         Random rnd = new Random();
+        private Player Player;
+        private Level Level;
+        private List<Level> Floor;
+
 
         Texture2D test;
 
@@ -103,6 +107,11 @@ namespace Archmage.Engine.Screens
             spriteBatch.DrawString(f, Globals.Player.HP.ToString(), new Vector2(Globals.ScrWidth - hp.Width + 40, 0 + hp.Height/3), Color.Red);
 
             spriteBatch.Draw(test, new Rectangle((int)Globals.scrCenter.X - test.Width / 2, (int)Globals.scrCenter.Y - test.Height / 2, test.Height, test.Width), Color.White);
+        }
+
+        private void SwapRoom()
+        {
+
         }
 
     }

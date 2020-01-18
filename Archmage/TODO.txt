@@ -11,7 +11,7 @@ Make colorPicker work - working
 Fix button sound effect issues - fixed
 Make file storage work - done
 
-make a level/enemy generator
+make a level/enemy generator - made a level class
 
 make spells work
 

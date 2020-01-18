@@ -16,6 +16,7 @@ using Archmage.Engine.Screens;
 using Microsoft.Xna.Framework;
 using Archmage.Entity;
 using Microsoft.Xna.Framework.Audio;
+using Archmage.Engine.Particles;
 
 namespace Archmage
 {
@@ -30,6 +31,7 @@ namespace Archmage
         public static Vector2 scrCenter { get; set; }
         public static Player Player { get; set; }
         public static SoundEffect sfx { get; set; }
+        public static ParticleEngine PE { get; set; }
 
     }
 }

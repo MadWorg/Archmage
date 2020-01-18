@@ -10,6 +10,7 @@ using Archmage.Engine.Interface;
 using Microsoft.Xna.Framework.Audio;
 using System.IO.IsolatedStorage;
 using Archmage.SaveGame;
+using Archmage.Engine.Particles;
 
 namespace Archmage
 {
@@ -71,11 +72,14 @@ namespace Archmage
 
             savegameStorage = IsolatedStorageFile.GetUserStoreForApplication();
 
+            // cant find a good XNA GameService tutorial, so global variable it is
+
             Globals.ScrWidth = GraphicsDevice.Viewport.Width;
             Globals.ScrHeight = GraphicsDevice.Viewport.Height;
             Globals.Content = Content;
             Globals.IM = new InputManager(tc);
             Globals.SM = new ScreenManager();
+
             Globals.scrCenter = new Vector2(Globals.ScrWidth / 2, Globals.ScrHeight / 2);
             Globals.sfx = Content.Load<SoundEffect>("audio/button");
 

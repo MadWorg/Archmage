@@ -21,6 +21,7 @@ namespace Archmage.Engine.Particles
         public Vector2 EmitterLocation { get; set; }
         private List<Particle> particles;
         private List<Texture2D> textures;
+        public Color Color { get; set; }
 
         public ParticleEngine(List<Texture2D> textures, Vector2 location)
         {
@@ -39,7 +40,7 @@ namespace Archmage.Engine.Particles
                 1f * (float)(random.NextDouble() * 2 - 1));
             float angle = 0;
             float angularVelocity = 0.1f * (float)(random.NextDouble() * 2 - 1);
-            Color color = new Color(
+            Color color = new Color( // make it changeable with the public Color Color so you can pick the particle color instead of random
                 (float)random.NextDouble(),
                 (float)random.NextDouble(),
                 (float)random.NextDouble());

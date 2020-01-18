@@ -18,7 +18,7 @@ namespace Archmage.Entity
         public string Color;
         public int HP;
         public int Mana;
-        public List<Item> items = new List<Item>();
+        public List<Item> items = new List<Item>(); // maybe turn this to array, since inventory is limited
         public List<StatusEffect> se = new List<StatusEffect>();
 
         public Player()
@@ -31,11 +31,11 @@ namespace Archmage.Entity
         public Player(string color, string hp, string mana)
         {
             Color = color;
-            HP = Int32.Parse(hp);
-            Mana = Int32.Parse(mana);
+            HP = int.Parse(hp);
+            Mana = int.Parse(mana);
         }
 
-        public override string ToString()
+        public override string ToString() // prepare player info for saving
         {
             return String.Format("{0};{1};{2}",Color,HP,Mana);
         }
